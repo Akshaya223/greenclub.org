@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://greenclubtrust.org" />
+    <title>Green Club Trust</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #40916c;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact {
+            background-color: #d8f3dc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: baseline;
+        }
+
+        .contact h2 {
+            color: #1b4332;
+            margin-bottom: 1rem;
+        }
+
+        .contact p {
+            margin: 0.5rem 0;
+            color: #081c15;
+        }
+
+        footer {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Thank you for visiting Green Club Trust!");
+        }
+    </script>
+    <script>
+        function redirectToAbout() {
+            window.location.hash = "about";
+        }
+
+    </script>
+</head>
+
+<body onload="showAlert()">
+    <header>
+        <h1>Welcome to Green Club Trust</h1>
+        <p>Dedicated to a sustainable and greener future</p>
+    </header>
+
+    <nav>
+        <a href="#about" onclick="redirectToAbout()">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#projects">Our Projects</a>
+        <a href="#activities">Previous Activities</a>
+    </nav>
+
+    <div class="content" id="about">
+        <h2>About Green Club Trust</h2>
+        <p>Green Club Trust is a non-governmental organization committed to environmental conservation, awareness, and
+            action. Join us in making a difference!</p>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: greenclubtrustsrpt@gmail.com</p>
+        <p>Phone: +91 9866035357</p>
+        <p>Address: RT Road,Suryapet-508213</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Green Club Trust. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
